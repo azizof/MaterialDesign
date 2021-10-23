@@ -117,3 +117,31 @@ styled dialog with
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/dangerDialog.png" width=50% hight=50% />
 
+### MCheckbox
+
+styled check box
+
+```java
+    
+        Form hi = new Form("MCheckBox");
+        MCheckBox checkBox = new MCheckBox("Check Box");
+        checkBox.style().paddingTop(2).marginTop(2).fontBold();
+
+        hi.add(checkBox);
+        hi.add(new MCheckBox("Check box").select().dataChangeListener(al -> {
+            System.out.println("data changed");
+        }));
+        hi.show();
+```
+
+####to chenge the color of the select check box :
+ - first param the color of the check box (default primery) 
+ - second param make the checkbox  round
+ - <p style="color:red"> the changes will apply to ALL CHECKBOXES </p>
+          
+
+```java
+         
+        MCheckBox.setCheckBoxesDesign(0xff0000, false);
+```
+
