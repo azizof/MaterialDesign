@@ -137,7 +137,8 @@ styled check box
 #### to chenge the color of the select check box :
  - first param the color of the check box (default primery) 
  - second param make the checkbox  round
- the changes will apply to **ALL CHECKBOXES**
+
+the changes will apply to **ALL CHECKBOXES**
           
 
 ```java
