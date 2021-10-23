@@ -40,6 +40,7 @@ OR just use new instance
         hi.show();
 ```
 the output of the code will be :
+<br/>
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png" width=50% hight=50% />
 
 ### Mtoast
