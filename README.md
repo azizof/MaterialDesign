@@ -45,6 +45,8 @@ the output of the code will be :
 ### Mtoast
 
 show styled toast 
+
+#### Custom 
 ```java
             MToast toast = new MToast("Hello World",2000);
             toast.style().bgColor("#573f94").fgColor("ffffff").roundBorder(2,0xddd8e9);
@@ -52,24 +54,27 @@ show styled toast
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mtoast.png" width=50% hight=50% />
 
+#### Info
 ```java
          MToast.showInfo("data saved");
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/infoToast.png" width=50% hight=50% />
 
+#### Success
 ```java
          MToast.showSuccess("file uploaded successfully");
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/successToast.png" width=50% hight=50% />
 
+#### Error
 ```java
      MToast.showError("Some error ")
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/errorToast.png" width=50% hight=50% />
 
+#### Warning
 ```java
          MToast.showWarning("this is warning");
-
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/warningToast.png" width=50% hight=50% />
 
