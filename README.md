@@ -4,12 +4,12 @@ this library also used lineicon icons to create brand icons like facebook,google
 
 ### using MStyle class
 
-´´´java
+```java
      Label mylabel = new Label();
      MStyle style = new MStyle(mylabel);
      style.fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
      
 OR just use new instance 
-  ´´´java
+```java
      Label mylabel = new Label();
      new MStyle(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
