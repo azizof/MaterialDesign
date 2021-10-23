@@ -42,3 +42,38 @@ OR just use new instance
 the output of the code will be :
 
 ![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png "MButton example")
+
+### Mtoast
+
+show styled toast 
+```java
+            MToast toast = new MToast("Hello World",2000);
+            toast.style().bgColor("#573f94").fgColor("ffffff").roundBorder(2,0xddd8e9);
+            toast.show();
+```
+![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/Mtoast.png "MToast example")
+
+```java
+         MToast.showInfo("data saved");
+```
+![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/infoToast.png "MToast example")
+
+```java
+         MToast.showSuccess("file uploaded successfully");
+```
+![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/successToast.png "MToast example")
+
+```java
+     MToast.showError("Some error ")
+```
+![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/errorToast.png "MToast example")
+
+```java
+         MToast.showWarning("this is warning");
+
+```
+![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/warningToast.png "MToast example")
+
+
+
+
