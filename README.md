@@ -41,7 +41,7 @@ OR just use new instance
 ```
 the output of the code will be :
 
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png "MButton example")
+![](https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png |width=100)
 
 ### Mtoast
 
