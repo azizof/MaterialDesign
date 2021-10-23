@@ -78,5 +78,40 @@ show styled toast
 ```
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/warningToast.png" width=50% hight=50% />
 
+### MDialog
 
+#### Custom
+```java
+            MDialog dialog = new MDialog();
+            dialog.style().fgColor(0x4E3885);
+            dialog.title("Check your love ")
+                    .body("Do you like this library? \n there is no choice :)")
+                    .confirmButton("Yes", MaterialIcons.createFontImageIcon(FontImage.MATERIAL_FAVORITE,0xff0000))
+                    .confirmButtonColors(0x573F94,0xeeebf4)
+                    .onConfirm(al-> System.out.println("Confirmed "));
+            dialog.show();
+```
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mdialog.png" width=50% hight=50% />
+
+#### Confirm
+```java
+    MDialog.createConfirm("Check your love",
+                    "Do you like this library? \n there is no choice :)",
+                    "Yes",
+                    null)
+                    .onConfirm(al -> System.out.println("confirmed"))
+                    .show();
+```
+
+#### Danger
+```java
+     MDialog.createDanger("Delete File",
+                    "Are you sure you want to delete this file ? ",
+                    "Yes",
+                    "No")
+                    .onConfirm(al -> System.out.println("confirmed"))
+                    .onCancel(al -> System.out.println("Canceled"))
+                    .show();
+```
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/dangerDialog.png" width=50% hight=50% />
 
