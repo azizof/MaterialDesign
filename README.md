@@ -102,6 +102,7 @@ show styled toast
                     .onConfirm(al -> System.out.println("confirmed"))
                     .show();
 ```
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/confirmDialog.png" width=50% hight=50% />
 
 #### Danger
 ```java
