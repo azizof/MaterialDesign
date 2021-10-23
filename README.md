@@ -12,28 +12,29 @@ this class used as style helper and used by each compontent in materialdesign.ui
 OR just use new instance 
 ```java
      Label mylabel = new Label();
-     new MStyle(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder(2,MaterialColor.PRIMARY,1,false);
+     new MStyle(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2)
+          .roundRectBorder(2,MaterialColor.PRIMARY,1,false);
 ```
 
 ### MButton
 ```java
-         Form hi = new Form("MButton", BoxLayout.y());
+       Form hi = new Form("MButton", BoxLayout.y());
 
-        MButton button = new MButton("Hello World");
-        button.style().bgColor(MaterialColor.BLACK).fgColor(MaterialColor.WHITE)
-                .padding(2).margin(1).roundBorder();
+       MButton button = new MButton("Hello World");
+       button.style().bgColor(MaterialColor.BLACK).fgColor(MaterialColor.WHITE)
+               .padding(2).margin(1).roundBorder();
 
-        MButton success = MButton.success("Success");
-        success.setMaterialIcon(FontImage.MATERIAL_DONE_OUTLINE);
-        success.action(al -> System.out.println("success"));
+       MButton success = MButton.success("Success");
+       success.setMaterialIcon(FontImage.MATERIAL_DONE_OUTLINE);
+       success.action(al -> System.out.println("success"));
 
-        MButton error = MButton.error("Error").action(al -> System.out.println("Error"));
+       MButton error = MButton.error("Error").action(al -> System.out.println("Error"));
 
-        MButton textOnly = MButton.textOnly("Text Only", MaterialColor.PRIMARY_DARK, false);
+       MButton textOnly = MButton.textOnly("Text Only", MaterialColor.PRIMARY_DARK, false);
 
-        MButton textOnlyUnderline = MButton.textOnly("Underline text", MaterialColor.PRIMARY_DARK, true);
+       MButton textOnlyUnderline = MButton.textOnly("Underline text", MaterialColor.PRIMARY_DARK, true);
 
-        hi.addAll(button, success, error, textOnly, FlowLayout.encloseRight(textOnlyUnderline), MButton.outline("outline", 0xff0000)
+       hi.addAll(button, success, error, textOnly, FlowLayout.encloseRight(textOnlyUnderline), MButton.outline("outline", 0xff0000)
                 .action(l -> System.out.println("out line chaining call method")));
 
         hi.show();
