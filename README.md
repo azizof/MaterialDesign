@@ -41,7 +41,6 @@ OR just use new instance
 ```
 the output of the code will be :
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png" width=50% hight=50% />
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png "Mbutton example")
 
 ### Mtoast
 
@@ -51,29 +50,28 @@ show styled toast
             toast.style().bgColor("#573f94").fgColor("ffffff").roundBorder(2,0xddd8e9);
             toast.show();
 ```
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/Mtoast.png "MToast example")
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mtoast.png" width=50% hight=50% />
 
 ```java
          MToast.showInfo("data saved");
 ```
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/infoToast.png "MToast example")
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/infoToast.png" width=50% hight=50% />
 
 ```java
          MToast.showSuccess("file uploaded successfully");
 ```
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/successToast.png "MToast example")
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/successToast.png" width=50% hight=50% />
 
 ```java
      MToast.showError("Some error ")
 ```
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/errorToast.png "MToast example")
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/errorToast.png" width=50% hight=50% />
 
 ```java
          MToast.showWarning("this is warning");
 
 ```
-![alt text](https://github.com/azizof/MaterialDesign/blob/master/images/warningToast.png "MToast example")
-
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/warningToast.png" width=50% hight=50% />
 
 
 
