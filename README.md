@@ -134,10 +134,10 @@ styled check box
         hi.show();
 ```
 
-####to chenge the color of the select check box :
+#### to chenge the color of the select check box :
  - first param the color of the check box (default primery) 
  - second param make the checkbox  round
- - <p style="color:red"> the changes will apply to ALL CHECKBOXES </p>
+ <p style="color:red"> the changes will apply to ALL CHECKBOXES </p>
           
 
 ```java
