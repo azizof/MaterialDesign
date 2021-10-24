@@ -88,13 +88,14 @@ public class MDialog extends Dialog implements MaterialComponent {
      * set the body of the dialog and its icon
      *
      * @param body the body of the dialog
-     * @param icon the material icon of the body from {@link FontImage}
+     * @param icon the icon of the body
      * @return this confirmDialog for chaining calls
      */
-    public MDialog body(String body, char icon) {
+    public MDialog body(String body, Image icon) {
         this.body = new SpanLabel(body);
-        this.body.setMaterialIcon(icon);
         bodyStyle = new MStyle(this.body.getTextComponent()).padding(1).margin(1);
+        this.body.setIcon(icon);
+
         return this;
     }
 
@@ -106,23 +107,6 @@ public class MDialog extends Dialog implements MaterialComponent {
      */
     public MDialog confirmButton(String confirm) {
         return confirmButton(confirm, null);
-    }
-
-    /**
-     * set the text and material icon  of confirm Button of the dialog
-     *
-     * @param confirm the text of the confirm button
-     * @param icon    the material icon of the confirm button from {@link FontImage}
-     * @return this confirmDialog for chaining calls
-     */
-    public MDialog confirmButton(String confirm, char icon) {
-        this.confirmButton = new MButton(confirm);
-        this.confirmButton.setMaterialIcon(icon);
-        confirmButton.style().roundRectBorder();
-        this.confirmButton.action((actionEvent) -> {
-            this.dispose();
-        });
-        return this;
     }
 
     /**
@@ -156,23 +140,6 @@ public class MDialog extends Dialog implements MaterialComponent {
         return cancelButton(cancel, null);
     }
 
-    /**
-     * set the text and material icon of cancel Button of the dialog
-     *
-     * @param cancel the text of the cancel button
-     * @param icon   the material icon of the cancel button from {@link FontImage}
-     * @return this confirmDialog for chaining calls
-     */
-    public MDialog cancelButton(String cancel, char icon) {
-        this.cancelButton = new MButton(cancel);
-        cancelButton.style().roundRectBorder().bgTransparency(0).fgColor(MaterialColor.PRIMARY).marginTop(2);
-        this.cancelButton.setMaterialIcon(icon);
-        this.cancelButton.action((actionEvent) -> {
-            this.dispose();
-
-        });
-        return this;
-    }
 
     /**
      * set the text and icon of cancel Button of the dialog
