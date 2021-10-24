@@ -12,8 +12,9 @@ public class MRadioButton extends RadioButton implements MaterialComponent {
 
     static {
         if (CN.getPlatformName().equals("ios")) {
-            setRadioButtonCheckIcon(MaterialIcons.createFontImageIcon(FontImage.MATERIAL_DONE, MaterialColor.PRIMARY),
-                    Image.createImage(1, 1));
+            Image selected = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_DONE, MaterialColor.PRIMARY);
+            setRadioButtonCheckIcon(selected,
+                    Image.createImage(selected.getWidth(), selected.getHeight()));
         } else {
             setRadioButtonSelectColor(MaterialColor.PRIMARY);
         }
@@ -68,7 +69,7 @@ public class MRadioButton extends RadioButton implements MaterialComponent {
         Style labelStyle = UIManager.getInstance().getComponentStyle("Label");
 
         style.margin(1).padding(1).fgColor(labelStyle.getFgColor()).bgColor(labelStyle.getBgColor())
-                    .bgTransparency(labelStyle.getBgTransparency());
+                .bgTransparency(labelStyle.getBgTransparency());
 
     }
 
