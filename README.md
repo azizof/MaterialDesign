@@ -146,3 +146,53 @@ the changes will apply to **ALL CHECKBOXES**
         MCheckBox.setCheckBoxesDesign(0xff0000, false);
 ```
 
+
+### example of using MRadioButton,card and icons
+
+
+```java
+        Form hi = new Form("MRadio,Card,icons", BoxLayout.y());
+        
+        Card socialMediaCard = new Card();
+        socialMediaCard.add(new Label("Select Social Media"));
+        MRadioButton facebook = new MRadioButton("Facebook",
+                MaterialIcons.createIcon(MaterialIcons.Brand.FACEBOOK_ORIGINAL,0x3b5998));
+
+        MRadioButton twitter = new MRadioButton("Twitter",
+                MaterialIcons.createIcon(MaterialIcons.Brand.TWITTER_ORIGINAL,0x1DA1F2));
+
+        new ButtonGroup(facebook,twitter);
+        socialMediaCard.addAll(facebook,twitter);
+
+        Card languageCard= new Card();
+        languageCard.style().bgColor(MaterialColor.getRandomLightColor());
+        SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
+        new MStyle(langQuestion.getTextComponent())
+                .marginBottom(3)
+                .marginTop(2)
+                .marginLeft(2)
+                .marginRight(2)
+                .padding(3,2);
+
+
+        MRadioButton java = new MRadioButton("Java",
+                MaterialIcons.createIcon(MaterialIcons.Brand.JAVA,0xed1d25));
+
+        MRadioButton javascript = new MRadioButton("Javascript",
+                MaterialIcons.createIcon(MaterialIcons.Brand.JAVASCRIPT,0xf0db4f));
+
+        MRadioButton python = new MRadioButton("Python",
+                MaterialIcons.createIcon(MaterialIcons.Brand.PYTHON,0x1DA1F2));
+
+        MRadioButton php = new MRadioButton("PHP",
+                MaterialIcons.createIcon(MaterialIcons.Brand.PHP,0x8993be,5));
+
+        new ButtonGroup(java,javascript,python,php);
+        languageCard.addAll(langQuestion,java,javascript,python,php);
+
+        hi.add(socialMediaCard);
+        hi.add(languageCard);
+        hi.show();         
+
+```
+
