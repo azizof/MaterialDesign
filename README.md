@@ -45,7 +45,7 @@ OR just use new instance
        MButton textOnlyUnderline = MButton.textOnly("Underline text", MaterialColor.PRIMARY_DARK, true);
 
        hi.addAll(button, success, error, textOnly, FlowLayout.encloseRight(textOnlyUnderline));
-       hi.add(MButton.outline("outline", 0xff0000).action(l -> System.out.println("out line chaining call method")));
+       hi.add(MButton.outline("outline", 0xff0000).action(l -> System.out.println("outline chaining call method")));
 
         hi.show();
 ```
