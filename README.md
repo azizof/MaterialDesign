@@ -2,6 +2,15 @@
 material design library for codenameone. this library used as style helper it reduse time and code.
 this library also used lineicon icons to create brand icons like facebook,google,apple,etc.
 
+ - [MStyle](https://github.com/azizof/MaterialDesign/blob/master/README.md#example-of-using-mradiobuttoncard-and-icons)
+ - [MButton] (https://github.com/azizof/MaterialDesign/blob/master/README.md#mbutton)
+ - [MToast] (https://github.com/azizof/MaterialDesign/blob/master/README.md#MToast)
+ - [MDialog] (https://github.com/azizof/MaterialDesign/blob/master/README.md#MDialog)
+ - [MCheckbox] (https://github.com/azizof/MaterialDesign/blob/master/README.md#MCheckbox)
+
+
+
+
 ### MStyle
 this class used as style helper and used by each compontent in materialdesign.ui package. for calling it just use **style()** method 
 ```java
@@ -43,7 +52,7 @@ the output of the code will be :
 <br/>
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/Mbutton.png" width=50% hight=50% />
 
-### Mtoast
+### MToast
 
 show styled toast 
 
