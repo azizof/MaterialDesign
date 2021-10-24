@@ -2,12 +2,12 @@
 material design library for codenameone. this library used as style helper it reduse time and code.
 this library also used lineicon icons to create brand icons like facebook,google,apple,etc.
 
- - [MStyle](https://github.com/azizof/MaterialDesign/blob/master/README.md#MStyle)
- - [MButtin](https://github.com/azizof/MaterialDesign/blob/master/README.md#MButton)
- - [MToast](https://github.com/azizof/MaterialDesign/blob/master/README.md#MToast)
- - [MDialog](https://github.com/azizof/MaterialDesign/blob/master/README.md#MDialog)
- - [MCheckbox](https://github.com/azizof/MaterialDesign/blob/master/README.md#MCheckbox)
- - [Example of MRadioButton,Card and icons](https://github.com/azizof/MaterialDesign/blob/master/README.md#example-of-using-mradiobuttoncard-and-icons)
+ - [MStyle](https://github.com/azizof/MaterialDesign#MStyle)
+ - [MButtin](https://github.com/azizof/MaterialDesign#MButton)
+ - [MToast](https://github.com/azizof/MaterialDesign#MToast)
+ - [MDialog](https://github.com/azizof/MaterialDesign#MDialog)
+ - [MCheckbox](https://github.com/azizof/MaterialDesign#MCheckbox)
+ - [Example of MRadioButton,Card and icons](https://github.com/azizof/MaterialDesign#example-of-using-mradiobuttoncard-and-icons)
 
 
 
@@ -45,7 +45,7 @@ OR just use new instance
        MButton textOnlyUnderline = MButton.textOnly("Underline text", MaterialColor.PRIMARY_DARK, true);
 
        hi.addAll(button, success, error, textOnly, FlowLayout.encloseRight(textOnlyUnderline));
-       hi.add(MButton.outline("outline", 0xff0000).action(l -> System.out.println("out line chaining call method")));
+       hi.add(MButton.outline("outline", 0xff0000).action(l -> System.out.println("outline chaining call method")));
 
         hi.show();
 ```
