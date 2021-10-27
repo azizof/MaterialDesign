@@ -175,7 +175,7 @@ the changes will apply to **ALL CHECKBOXES**
         socialMediaCard.addAll(facebook,twitter);
 
         Card languageCard= new Card();
-        languageCard.style().bgColor(MaterialColor.getRandomLightColor());
+        languageCard.style().bgColor(0xffffcc);
         SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
         new MStyle(langQuestion.getTextComponent())
                 .marginBottom(3)
@@ -205,4 +205,10 @@ the changes will apply to **ALL CHECKBOXES**
         hi.show();         
 
 ```
+
+On **IOS** 
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/iosCard.png" width=50% hight=50% />
+
+On **Android** 
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/andCard.png" width=50% hight=50% />
 
