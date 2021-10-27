@@ -221,6 +221,15 @@ public class MStyle {
 	}
 
 	/**
+	 *  Set the opacity value of the component
+	 * 
+	 *  @param opacity the opacity value
+	 *  @return component style for chaining calls
+	 */
+	public MStyle opacity(int opacity) {
+	}
+
+	/**
 	 *  get the foreground color
 	 * 
 	 *  @return the foreground color

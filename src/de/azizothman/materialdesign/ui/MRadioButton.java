@@ -14,7 +14,7 @@ public class MRadioButton extends RadioButton implements MaterialComponent {
         if (CN.getPlatformName().equals("ios")) {
             Image selected = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_DONE, MaterialColor.PRIMARY);
             setRadioButtonCheckIcon(selected,
-                    Image.createImage(selected.getWidth(), selected.getHeight()));
+                    Image.createImage(selected.getWidth(), selected.getHeight(), 0x00000000));
         } else {
             setRadioButtonSelectColor(MaterialColor.PRIMARY);
         }
@@ -97,12 +97,12 @@ public class MRadioButton extends RadioButton implements MaterialComponent {
     /**
      * set the image of all radio buttons box while selected and unselected
      *
-     * @param select     the icon of all radio buttons box while selected
+     * @param selected   the icon of all radio buttons box while selected
      * @param unselected the icon of all radio buttons box while not selected
      */
-    public static void setRadioButtonCheckIcon(Image select, Image unselected) {
-        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonImages(select, unselected);
-        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonFocusImages(select, unselected, select, unselected);
+    public static void setRadioButtonCheckIcon(Image selected, Image unselected) {
+        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonImages(selected, unselected);
+        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonFocusImages(selected, unselected, selected, unselected);
     }
 
     /**
@@ -112,10 +112,14 @@ public class MRadioButton extends RadioButton implements MaterialComponent {
      */
     public static void setRadioButtonSelectColor(int color) {
         //============= Radio Button Icons =============================
-        Image unselect = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_RADIO_BUTTON_UNCHECKED, 0x2a2a2a);
-        Image select = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_RADIO_BUTTON_CHECKED, color);
-        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonImages(select, unselect);
-        ((DefaultLookAndFeel) UIManager.getInstance().getLookAndFeel()).setRadioButtonFocusImages(select, unselect, select, unselect);
+        Image unselected = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_RADIO_BUTTON_UNCHECKED, 0x2a2a2a);
+        Image selected;
+        if (CN.getPlatformName().equals("ios")) {
+            selected = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_DONE, color);
+        } else {
+            selected = MaterialIcons.createFontImageIcon(FontImage.MATERIAL_RADIO_BUTTON_CHECKED, color);
+        }
+        setRadioButtonCheckIcon(selected, unselected);
     }
 
 

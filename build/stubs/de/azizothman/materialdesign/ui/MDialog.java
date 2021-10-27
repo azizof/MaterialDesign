@@ -31,10 +31,10 @@ public class MDialog extends com.codename1.ui.Dialog implements MaterialComponen
 	 *  set the body of the dialog and its icon
 	 * 
 	 *  @param body the body of the dialog
-	 *  @param icon the material icon of the body from {@link FontImage}
+	 *  @param icon the icon of the body
 	 *  @return this confirmDialog for chaining calls
 	 */
-	public MDialog body(String body, char icon) {
+	public MDialog body(String body, com.codename1.ui.Image icon) {
 	}
 
 	/**
@@ -44,16 +44,6 @@ public class MDialog extends com.codename1.ui.Dialog implements MaterialComponen
 	 *  @return this confirmDialog for chaining calls
 	 */
 	public MDialog confirmButton(String confirm) {
-	}
-
-	/**
-	 *  set the text and material icon  of confirm Button of the dialog
-	 * 
-	 *  @param confirm the text of the confirm button
-	 *  @param icon    the material icon of the confirm button from {@link FontImage}
-	 *  @return this confirmDialog for chaining calls
-	 */
-	public MDialog confirmButton(String confirm, char icon) {
 	}
 
 	/**
@@ -73,16 +63,6 @@ public class MDialog extends com.codename1.ui.Dialog implements MaterialComponen
 	 *  @return this confirmDialog for chaining calls
 	 */
 	public MDialog cancelButton(String cancel) {
-	}
-
-	/**
-	 *  set the text and material icon of cancel Button of the dialog
-	 * 
-	 *  @param cancel the text of the cancel button
-	 *  @param icon   the material icon of the cancel button from {@link FontImage}
-	 *  @return this confirmDialog for chaining calls
-	 */
-	public MDialog cancelButton(String cancel, char icon) {
 	}
 
 	/**

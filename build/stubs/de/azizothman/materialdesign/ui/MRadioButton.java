@@ -61,10 +61,10 @@ public class MRadioButton extends com.codename1.ui.RadioButton implements Materi
 	/**
 	 *  set the image of all radio buttons box while selected and unselected
 	 * 
-	 *  @param select     the icon of all radio buttons box while selected
+	 *  @param selected   the icon of all radio buttons box while selected
 	 *  @param unselected the icon of all radio buttons box while not selected
 	 */
-	public static void setRadioButtonCheckIcon(com.codename1.ui.Image select, com.codename1.ui.Image unselected) {
+	public static void setRadioButtonCheckIcon(com.codename1.ui.Image selected, com.codename1.ui.Image unselected) {
 	}
 
 	/**
