@@ -206,9 +206,9 @@ the changes will apply to **ALL CHECKBOXES**
 
 ```
 
-On **IOS** 
+On **IOS** <br/>
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/iosCard.png" width=50% hight=50% />
-
-On **Android** 
+<br/>
+On **Android**  <br/>
 <img src ="https://github.com/azizof/MaterialDesign/blob/master/images/andCard.png" width=50% hight=50% />
 
