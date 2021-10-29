@@ -11,9 +11,6 @@ package de.azizothman.materialdesign.ui;
  */
 public class MStyle {
 
-	public MStyle(com.codename1.ui.Component component) {
-	}
-
 	/**
 	 *  set the background color when the component pressed
 	 *  <h6>Warning!</h6> this will not work after set the background to linear gradient
@@ -439,5 +436,13 @@ public class MStyle {
 	 *  @return the right margin
 	 */
 	public float getMarginRight() {
+	}
+
+	/**
+	 * 
+	 *  @param component
+	 *  @return
+	 */
+	public static MStyle to(com.codename1.ui.Component component) {
 	}
 }
