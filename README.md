@@ -23,7 +23,7 @@ this class used as style helper and used by each compontent in materialdesign.ui
 for non materialdesign.ui package components you can use static method to(Component)
 ```java
      Label mylabel = new Label();
-     MStyle.to(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
+     MStyle.forComponent(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
 ```
 
 ### MButton
@@ -177,7 +177,7 @@ the changes will apply to **ALL CHECKBOXES**
         Card languageCard= new Card();
         languageCard.style().bgColor(0xffffcc);
         SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
-        MStyle.to(langQuestion.getTextComponent())
+        MStyle.forComponent(langQuestion.getTextComponent())
                 .marginBottom(3)
                 .marginTop(2)
                 .marginLeft(2)
