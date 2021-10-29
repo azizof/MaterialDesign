@@ -24,7 +24,7 @@ for non materialdesign.ui package components you can use static method to(Compon
 ```java
      Label mylabel = new Label();
      MStyle.to(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
-
+```
 
 ### MButton
 ```java
