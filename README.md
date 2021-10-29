@@ -2,8 +2,13 @@
 material design library for codenameone. this library used as style helper it reduse time and code.
 this library also used lineicon icons to create brand icons like facebook,google,apple,etc.
 
+### Download 
+download cn1lib : [MaterialDesignLibrary](https://github.com/azizof/MaterialDesign/blob/master/dist/MaterialdesignLibrary.cn1lib?raw=true)
+
+### Examples with Images
+
  - [MStyle](https://github.com/azizof/MaterialDesign#MStyle)
- - [MButtin](https://github.com/azizof/MaterialDesign#MButton)
+ - [MButton](https://github.com/azizof/MaterialDesign#MButton)
  - [MToast](https://github.com/azizof/MaterialDesign#MToast)
  - [MDialog](https://github.com/azizof/MaterialDesign#MDialog)
  - [MCheckbox](https://github.com/azizof/MaterialDesign#MCheckbox)
@@ -175,7 +180,7 @@ the changes will apply to **ALL CHECKBOXES**
         socialMediaCard.addAll(facebook,twitter);
 
         Card languageCard= new Card();
-        languageCard.style().bgColor(MaterialColor.getRandomLightColor());
+        languageCard.style().bgColor(0xffffcc);
         SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
         new MStyle(langQuestion.getTextComponent())
                 .marginBottom(3)
@@ -205,4 +210,10 @@ the changes will apply to **ALL CHECKBOXES**
         hi.show();         
 
 ```
+
+On **IOS** <br/>
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/iosCard.png" width=50% hight=50% />
+<br/>
+On **Android**  <br/>
+<img src ="https://github.com/azizof/MaterialDesign/blob/master/images/andCard.png" width=50% hight=50% />
 
