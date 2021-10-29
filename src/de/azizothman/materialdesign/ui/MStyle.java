@@ -715,8 +715,13 @@ public class MStyle {
      *     <li>opacity : set the opacity level for the component by calling {@link MStyle#opacity(int)}</li>
      *      <br/>
      *
-     *     <li>font style :  change font style by calling {@link MStyle#fontBold()} ,{@link MStyle#fontPlain()},
-     *     {@link MStyle#fontItalic()}</li>
+     *     <li>font style :  change font style by calling
+     *          <ul>
+     *              <li>{@link MStyle#fontBold()}</li>
+     *              <li>{@link MStyle#fontPlain()}</li>
+     *              <li>{@link MStyle#fontItalic()}</li>
+     *          </ul>
+     *     </li>
      *      <br/>
      *
      *     <li>round border : create simple round border for the component by calling {@link MStyle#roundBorder()}
