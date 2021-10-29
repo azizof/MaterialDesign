@@ -18,7 +18,7 @@ public class YBox extends Container implements MaterialComponent {
      */
     public YBox() {
         super(BoxLayout.y());
-        style = MStyle.to(this);
+        style = MStyle.forComponent(this);
     }
 
     /**

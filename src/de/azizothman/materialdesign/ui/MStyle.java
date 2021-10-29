@@ -668,11 +668,71 @@ public class MStyle {
     }
 
     /**
+     * <p>create MStyle instance and bind it to the component.</p>
      *
-     * @param component
-     * @return
+     * <p>this helps to style the component fast and easy. by binding the style to the component
+     * you can be able to change the following style attribute with only one line:</p>
+     *
+     * <ul>
+     *     <li>foreground :  by calling {@link MStyle#fgColor(int) } or
+     *     {@link MStyle#fgColor(String) } method which take color as Integer eg.0xffffff or a String hex color eg. "#ffffff" .</li>
+     *      <br/>
+     *
+     *     <li>background : by calling {@link MStyle#bgColor(int) } or
+     *      {@link MStyle#bgColor(String) } method which take color as Integer eg.0xffffff or a String hex color eg. "#ffffff". </li>
+     *      <br/>
+     *
+     *     <li>gradient background :  in horizon by calling {@link MStyle#bgGradientHorizontal(int, int)} or
+     *     {@link MStyle#bgGradientHorizontal(String, String)} or vertical by calling {@link MStyle#bgGradientVertical(int, int)} or
+     *     {@link MStyle#bgGradientVertical(String, String)}</li>
+     *       <br/>
+     *
+     *     <li>background transparency : by calling {@link MStyle#bgTransparency(int transparency)}
+     *     which take an Integer as transparency level for the background. !important the value should be between 0-255.</li>
+     *      <br/>
+     *
+     *     <li>alignment: by calling one of the following method
+     *           <ul>
+     *             <li>{@link MStyle#alignCenter()}</li>
+     *             <li> {@link MStyle#alignLeft()}</li>
+     *             <li>{@link MStyle#alignRight()}</li>
+     *         </ul>
+     *    </li>
+     *    <br/>
+     *
+     *     <li>margin : by calling {@link MStyle#marginTop(float)},{@link MStyle#marginBottom(float)},{@link MStyle#marginLeft(float)}
+     *     ,{@link MStyle#marginRight(float)} or by calling {@link MStyle#margin(float, float)} which take two parameters
+     *     the first for (top and bottom) and the second for (left and right) . or by calling {@link MStyle#margin(float)} to set
+     *     the margin for top,bottom,right,left at the same time </li>
+     *      <br/>
+     *
+     *     <li>padding : by calling {@link MStyle#paddingTop(float)},{@link MStyle#paddingBottom(float)},{@link MStyle#paddingLeft(float)}
+     *     ,{@link MStyle#paddingRight(float)} or by calling {@link MStyle#padding(float, float)} which take two parameters
+     *     the first for (top and bottom) and the second for (left and right). or by calling {@link MStyle#padding(float)} to set
+     *     the padding for top,bottom,right,left at the same time</li>
+     *      <br/>
+     *
+     *     <li>opacity : set the opacity level for the component by calling {@link MStyle#opacity(int)}</li>
+     *      <br/>
+     *
+     *     <li>font style :  change font style by calling {@link MStyle#fontBold()} ,{@link MStyle#fontPlain()},
+     *     {@link MStyle#fontItalic()}</li>
+     *      <br/>
+     *
+     *     <li>round border : create simple round border for the component by calling {@link MStyle#roundBorder()}
+     *     or set specific stroke width and color to the border by calling {@link MStyle#roundBorder(int, int)}</li>
+     *      <br/>
+     *
+     *     <li>round rect border : create simple round rect border for the component by calling {@link MStyle#roundRectBorder()}
+     *          or set specific stroke width and color , corner radius and show shadow to the border by calling
+     *          {@link MStyle#roundRectBorder(int, int, float, boolean)}}</li>
+     *
+     * </ul>
+     *
+     * @param component the component to which the MStyle instance will be bind
+     * @return new MStyle instance for the given component
      */
-    public static MStyle to(Component component){
+    public static MStyle forComponent(Component component) {
         return new MStyle(component);
     }
 }
