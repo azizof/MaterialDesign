@@ -12,23 +12,18 @@ download cn1lib : [MaterialDesignLibrary](https://github.com/azizof/MaterialDesi
  - [MToast](https://github.com/azizof/MaterialDesign#MToast)
  - [MDialog](https://github.com/azizof/MaterialDesign#MDialog)
  - [MCheckbox](https://github.com/azizof/MaterialDesign#MCheckbox)
- - [Example of MRadioButton,Card and icons](https://github.com/azizof/MaterialDesign#example-of-using-mradiobuttoncard-and-icons)
+ - [MRadioButton,Card and Icons](https://github.com/azizof/MaterialDesign#example-of-using-mradiobuttoncard-and-icons)
 
 
 
 
 ### MStyle
 this class used as style helper and used by each compontent in materialdesign.ui package. for calling it just use **style()** method 
+
+for non materialdesign.ui package components you can use static method to(Component)
 ```java
      Label mylabel = new Label();
-     MStyle style = new MStyle(mylabel);
-     style.fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
-```
-OR just use new instance 
-```java
-     Label mylabel = new Label();
-     new MStyle(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2)
-          .roundRectBorder(2,MaterialColor.PRIMARY,1,false);
+     MStyle.to(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
 ```
 
 ### MButton
@@ -182,7 +177,7 @@ the changes will apply to **ALL CHECKBOXES**
         Card languageCard= new Card();
         languageCard.style().bgColor(0xffffcc);
         SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
-        new MStyle(langQuestion.getTextComponent())
+        MStyle.to(langQuestion.getTextComponent())
                 .marginBottom(3)
                 .marginTop(2)
                 .marginLeft(2)
