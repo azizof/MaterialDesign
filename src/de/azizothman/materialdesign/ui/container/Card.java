@@ -29,7 +29,7 @@ public class Card extends Container implements MaterialComponent {
      */
     public Card(Layout layout) {
         super(layout);
-        style = new MStyle(this);
+        style = MStyle.to(this);
         initMaterialComponent();
     }
 

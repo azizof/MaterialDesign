@@ -18,7 +18,7 @@ public class XBox extends Container implements MaterialComponent {
      */
     public XBox() {
         super(BoxLayout.x());
-        style = new MStyle(this);
+        style = MStyle.to(this);
     }
 
     /**

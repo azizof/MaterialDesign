@@ -50,7 +50,7 @@ public class MStyle {
     private Font font;
 
 
-    public MStyle(Component component) {
+    MStyle(Component component) {
         this.component = component;
         byte b = com.codename1.ui.plaf.Style.UNIT_TYPE_PIXELS;
         this.component.getAllStyles().setPaddingUnit(b, b, b, b);
@@ -667,5 +667,12 @@ public class MStyle {
         return CN.convertToPixels(dip);
     }
 
-
+    /**
+     *
+     * @param component
+     * @return
+     */
+    public static MStyle to(Component component){
+        return new MStyle(component);
+    }
 }
