@@ -760,5 +760,37 @@ public class MaterialIcons {
          * Line icons see https://lineicons.com/icons/ for full list
          */
         public static final char BTC = '\uEA45';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char DOLLAR_COIN = '\uEA79';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char DOLLAR = '\uEAA0';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char POUND = '\uEB64';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char RUPEE = '\uEB7E';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char YEN = '\uEC10';
+
+        /**
+         * Line icons see https://lineicons.com/icons/ for full list
+         */
+        public static final char EURO = '\uEAB0';
+
+
     }
 }
