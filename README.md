@@ -177,7 +177,7 @@ the changes will apply to **ALL CHECKBOXES**
         Card languageCard= new Card();
         languageCard.style().bgColor(0xffffcc);
         SpanLabel langQuestion = new SpanLabel("which of this language used in Codename one?");
-        new MStyle(langQuestion.getTextComponent())
+        MStyle.to(langQuestion.getTextComponent())
                 .marginBottom(3)
                 .marginTop(2)
                 .marginLeft(2)
