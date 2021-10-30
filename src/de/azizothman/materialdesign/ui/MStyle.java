@@ -688,7 +688,7 @@ public class MStyle {
      *       <br/>
      *
      *     <li>background transparency : by calling {@link MStyle#bgTransparency(int transparency)}
-     *     which take an Integer as transparency level for the background. !important the value should be between 0-255.</li>
+     *     which take an Integer as transparency level for the background. <b>!important </b> the value should be between 0-255.</li>
      *      <br/>
      *
      *     <li>alignment: by calling one of the following method
