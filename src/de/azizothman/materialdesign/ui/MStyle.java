@@ -47,7 +47,7 @@ public class MStyle {
     /**
      * the font of the component
      */
-    private Font font;
+    private final Font font;
 
 
     MStyle(Component component) {

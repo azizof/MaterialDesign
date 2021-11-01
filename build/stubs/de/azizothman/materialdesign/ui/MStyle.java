@@ -459,7 +459,7 @@ public class MStyle {
 	 *        <br/>
 	 * 
 	 *      <li>background transparency : by calling {@link MStyle#bgTransparency(int transparency)}
-	 *      which take an Integer as transparency level for the background. !important the value should be between 0-255.</li>
+	 *      which take an Integer as transparency level for the background. <b>!important </b> the value should be between 0-255.</li>
 	 *       <br/>
 	 * 
 	 *      <li>alignment: by calling one of the following method
@@ -486,8 +486,13 @@ public class MStyle {
 	 *      <li>opacity : set the opacity level for the component by calling {@link MStyle#opacity(int)}</li>
 	 *       <br/>
 	 * 
-	 *      <li>font style :  change font style by calling {@link MStyle#fontBold()} ,{@link MStyle#fontPlain()},
-	 *      {@link MStyle#fontItalic()}</li>
+	 *      <li>font style :  change font style by calling
+	 *           <ul>
+	 *               <li>{@link MStyle#fontBold()}</li>
+	 *               <li>{@link MStyle#fontPlain()}</li>
+	 *               <li>{@link MStyle#fontItalic()}</li>
+	 *           </ul>
+	 *      </li>
 	 *       <br/>
 	 * 
 	 *      <li>round border : create simple round border for the component by calling {@link MStyle#roundBorder()}
