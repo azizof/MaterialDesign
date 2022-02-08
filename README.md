@@ -20,7 +20,7 @@ download cn1lib : [MaterialDesignLibrary](https://github.com/azizof/MaterialDesi
 ### MStyle
 this class used as style helper and used by each compontent in materialdesign.ui package. for calling it just use **style()** method 
 
-for non materialdesign.ui package components you can use static method to(Component)
+for non materialdesign.ui package components you can use static method forComponent(Component)
 ```java
      Label mylabel = new Label();
      MStyle.forComponent(mylabel).fgColor(MaterialColor.BLACK).bgColor(MaterialColor.WHITE).padding(2).margin(2).roundRectBorder();
